@@ -1,0 +1,195 @@
+ZAD 1
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Dawid Dabrowski");
+    }
+}
+ZAD2
+class HelloWorld {
+    public static void main(String[] args) {
+        String a = "Dawid Dabrowski";
+        System.out.println(a);
+        System.out.println(a.length());
+        
+    }
+}
+ZAD3
+class HelloWorld {
+    public static void main(String[] args) {
+        String a = "Ala";
+        String b = "Ma";
+        String c = "Kota";
+        System.out.println(a.concat(b).concat(c));
+    }
+}
+ZAD4
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("                    *");
+        System.out.println("                    * *");
+        System.out.println("                    * * *");
+        System.out.println("* * * * * * * * * * * * * *");
+        System.out.println("* * * * * * * * * * * * * * *");
+        System.out.println("* * * * * * * * * * * * * *");
+        System.out.println("                    * * *");
+        System.out.println("                    * *");
+        System.out.println("                    *");
+    
+        System.out.println("     *");
+        System.out.println("    * *");
+        System.out.println("   * * *");
+        System.out.println("  * * * *");
+        System.out.println(" * * * * *");
+        System.out.println("* * * * * *");
+        System.out.println(" * * * * *");
+        System.out.println("  * * * *");
+        System.out.println("   * * *");
+        System.out.println("    * *");
+        System.out.println("     *");
+    }
+}
+ZAD5
+class HelloWorld {
+    public static void main(String[] args) {
+        String a = "Ala ma kota";
+        System.out.println(a.replace("a","e"));
+    }
+}
+ZAD6
+class HelloWorld {
+    public static void main(String[] args) {
+        String a = "Ala ma kota";
+        System.out.println(a.toUpperCase());
+        System.out.println(a.toLowerCase());
+    }
+}
+ZAD7
+class HelloWorld {
+    public static void main(String[] args) {
+        char a = 'A';
+        char b = '!';
+        char c = '@';
+        char d = '>';
+        char e = '~';
+        char f = '\n';
+        char g = '\b';
+        int ascii1 = a;  
+        int ascii2 = b;  
+        int ascii3 = c;  
+        int ascii4 = d;  
+        int ascii5 = e;  
+        int ascii6 = f;  
+        int ascii7 = g;  
+        System.out.println(ascii1);
+        System.out.println(ascii2);
+        System.out.println(ascii3);
+        System.out.println(ascii4);
+        System.out.println(ascii5);
+        System.out.println(ascii6);
+        System.out.println(ascii7);
+    }
+}
+ZAD8
+class HelloWorld {
+    public static void main(String[] args) {
+        char a = 'A';
+        char b = 'Z';
+        char c = 'a';
+        char d = 'z';
+        char e = '1';
+        char f = '9';
+        int asci1= a;
+        int asci2= b;
+        int asci3= c;
+        int asci4= d;
+        int asci5= e;
+        int asci6= f;
+        System.out.println("Duze litery:");
+        System.out.print(asci1);
+        System.out.print("-");
+        System.out.println(asci2);
+        System.out.println("Male litery:");
+        System.out.print(asci3);
+        System.out.print("-");
+        System.out.println(asci4);
+        System.out.println("Cyfry:");
+        System.out.print(asci5);
+        System.out.print("-");
+        System.out.print(asci6);
+        
+    }
+}
+ZAD9
+class HelloWorld {
+    public static void main(String[] args) {
+        String zdanie = "Grzesiek nie wiedzial dlaczego ... jest tak drapieznym ... mimo, ze jego ... na to nie wskazuje.";
+        String part1 = zdanie.substring(0,34);
+        String part2 = zdanie.substring(34,58);
+        String part3 = zdanie.substring(58,95);
+        String noweSlowo1 = part1.replace("...","Dzik");
+        String noweSlowo2 = part2.replace("...","Zwierzakiem");
+        String noweSlowo3 = part3.replace("...","Oko");
+        System.out.println(noweSlowo1);
+        System.out.println(noweSlowo2);
+        System.out.println(noweSlowo3);
+    }
+    
+}
+ZAD10
+class HelloWorld {
+    public static void main(String[] args) {
+        String zdanie = "... to najlepsza ksiazka napisana przez ...";
+        String part1 = zdanie.substring(0,16);
+        String part2 = zdanie.substring(16,43);
+        String new1 = part1.replace("...","Wladcy Pierscieni");
+        String new2 = part2.replace("...","Tolkiena");
+        System.out.print(new1);
+        System.out.print(new2);
+    }
+    
+}
+ZAD11
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.print("wodrze");
+        System.out.print("wodrze");
+        System.out.print("wodrze");
+        System.out.print("wodrze");
+        System.out.print("wodrze");
+    }
+    
+}
+ZAD12
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Dzisiaj jest(12-08-2077) godzina(22:30:56)");
+    }
+    
+}
+ZAD13
+class HelloWorld {
+    public static void main(String[] args) {
+        int a = 54;
+        int b = 103;
+        int c = 241;
+        int d = 67;
+        int e = 9999;
+        int f = 15;
+        int g = 175702;
+        char new1 = (char) a;
+        char new2 = (char) b;
+        char new3 = (char) c;
+        char new4 = (char) d;
+        char new5 = (char) e;
+        char new6 = (char) f;
+        char new7 = (char) g;
+        System.out.println(new1);
+        System.out.println(new2);
+        System.out.println(new3);
+        System.out.println(new4);
+        System.out.println(new5);
+        System.out.println(new6);
+        System.out.println(new7);
+    }
+    
+}

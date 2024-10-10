@@ -1,0 +1,104 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.lang.Math;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+            //zad1();
+            //zad2();
+            //zad3();
+            //zad4();
+            zad5();
+        }
+        static void zad1(){
+            float a = 23.0f;
+            int b = 76;
+            System.out.println(a+b);
+            System.out.println("Float");
+            float c = 41*2.0f;
+            int d = 3;
+            System.out.println(c+d);
+            System.out.println("Float");
+            int e = 5;
+            int f = 33;
+            System.out.println(e-f);
+            System.out.println("Integer");
+            int g = 109;
+            int h = 3;
+            System.out.println(g%h);
+            System.out.println("Int");
+            int i = 50;
+            int j = 2;
+            System.out.println(i/j);
+            System.out.println("Int");
+            int k = 4;
+            int l = 2;
+            System.out.println(4|2);
+            System.out.println("Int");
+            System.out.println(3*3*3*3*3);
+            System.out.println("Int");
+            System.out.println(7&9);
+            System.out.println("Int");
+        }
+        static void zad2(){
+            double a = Math.sqrt(7);
+            int b = 3*3*3;
+            double wynik = (a - 1)/2+b%2;
+            int c = (int)wynik;
+            System.out.println(c);
+            float data = 2002/12*8;
+            int wynik1 = (int)data;
+            System.out.println(wynik1);
+            double e = 3+Math.sqrt(3);
+            double f = (Math.sqrt(5)/2)/3;
+            double data2 = (e/f+1);
+            int wynik2 = (int)data2;
+            System.out.println(wynik2);
+            System.out.println(5%3%7);
+            double data3=(9%5+1)/Math.pow(2,1/4);
+            int wynik4 = (int)data3;
+            System.out.println(wynik4);
+        }
+        static void zad3(){
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("Podaj 1 slowo");
+            String slowo1 = myObj.nextLine();
+            System.out.println("Podaj 2 slowo");
+            String slowo2 = myObj.nextLine();
+            System.out.println("1 slowo "+slowo1);
+            System.out.println("2 slowo "+slowo2);
+        }
+        static void zad4(){
+            Scanner myObj = new Scanner(System.in);
+            System.out.println("Podaj 1 liczbe");
+            int slowo1 = myObj.nextInt();
+            System.out.println("Podaj 2 liczbe");
+            int slowo2 = myObj.nextInt();
+            int a = slowo1+slowo2;
+            int b = slowo1-slowo2;
+            int c = slowo1*slowo2;
+            int d = slowo1/slowo2;
+            System.out.println("Suma "+a);
+            System.out.println("Roznica "+b);
+            System.out.println("iloczyn "+c);
+            System.out.println("iloraz "+d);
+
+        }
+        static void zad5(){
+        Scanner myObj = new Scanner(System.in);
+        System.out.println("Podaj 1 liczbe");
+        int c = 67;
+        int x = myObj.nextInt();
+        System.out.println("Powiekszona o 140: "+ (x +140));
+        System.out.println("Pomniejszona o 31: "+ (x -31));
+        System.out.println("Powiekszona 7 razy: "+ (x *7));
+        System.out.println("Pomniejszona o 13 razy: "+ (x /13));
+        System.out.println("Modulo 7 : "+ (x %7));
+        System.out.println("Do potegi 45: "+ (Math.pow(45,x)));
+        System.out.println("Iloraz bitowy: "+ (x&67));
+        System.out.println("Suma bitowa: "+ (x|59));
+        System.out.println("XOR: "+ (x ^ 23));
+        System.out.println("5 bitow w lewo: "+ (x << 5));
+        System.out.println("6 bitow w prawo: "+ (x >> 6));
+        }
+    }

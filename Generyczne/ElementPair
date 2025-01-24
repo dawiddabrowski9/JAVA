@@ -1,0 +1,65 @@
+// Klasa generyczna ElementPair
+class ElementPair<T> {
+    private T first;
+    private T second;
+
+    public ElementPair(T first, T second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public T getFirst() {
+        return first;
+    }
+
+    public T getSecond() {
+        return second;
+    }
+}
+
+// Klasa bazowa Shape
+abstract class Shape {
+    public abstract double getArea(); // Metoda do obliczania pola powierzchni
+}
+
+// Klasa Circle dziedzicząca po Shape
+class Circle extends Shape {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius; // Pole powierzchni koła
+    }
+}
+
+// Klasa z metodą generyczną findLargest
+class ShapeUtils {
+    public static <T extends Shape> T findLargest(ElementPair<T> pair) {
+        T first = pair.getFirst();
+        T second = pair.getSecond();
+
+        // Porównanie obiektów na podstawie pola powierzchni
+        if (first.getArea() > second.getArea()) {
+            return first;
+        } else {
+            return second;
+        }
+    }
+}
+
+// Przykład użycia
+public class Main {
+    public static void main(String[] args) {
+        Circle circle1 = new Circle(3);
+        Circle circle2 = new Circle(4);
+
+        ElementPair<Circle> pair = new ElementPair<>(circle1, circle2);
+        Circle largestCircle = ShapeUtils.findLargest(pair);
+
+        System.out.println("Największe koło ma pole: " + largestCircle.getArea());
+    }
+}
